@@ -11,4 +11,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class SidebarLinkComponent {
   title = input<string>();
   route = input<string>();
+  icon = input<string>();
 }
