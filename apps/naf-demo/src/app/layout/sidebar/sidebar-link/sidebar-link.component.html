@@ -1,1 +1,4 @@
-<a [routerLink]="route()" routerLinkActive="active">{{ title() }}</a>
+<a [routerLink]="route()" routerLinkActive="active">
+  <naf-icon [path]="icon()"></naf-icon>
+  {{ title() }}
+</a>

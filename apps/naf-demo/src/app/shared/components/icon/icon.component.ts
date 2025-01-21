@@ -19,5 +19,5 @@ import { Component, input } from '@angular/core';
 })
 export class IconComponent {
   // alert icon by default
-  path = input<string>('M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z');
+  path = input<string | undefined>('M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z');
 }
