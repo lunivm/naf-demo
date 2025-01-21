@@ -1,10 +1,13 @@
+@use "sass:map";
+@use "../../shared/styles/indents";
+
 :host {
-  padding: 16px;
+  padding: map.get(indents.$indents, "medium");
   display: block;
   min-width: 256px;
 }
 
 .naf-logo {
   display: block;
-  padding: 16px;
+  padding: map.get(indents.$indents, "medium");
 }

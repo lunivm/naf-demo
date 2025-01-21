@@ -4,12 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { DomSanitizer } from '@angular/platform-browser';
+import { MainContainerComponent } from './layout/main-container/main-container.component';
 
 @Component({
   imports: [
     MatIconModule,
     SidebarComponent,
-    RouterModule
+    RouterModule,
+    MainContainerComponent,
   ],
   selector: 'naf-root',
   templateUrl: './app.component.html',
