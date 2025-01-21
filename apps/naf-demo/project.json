@@ -18,6 +18,10 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           {
+            "glob": "mdi.svg",
+            "input": "node_modules/@mdi/angular-material"
+          },
+          {
             "glob": "**/*",
             "input": "apps/naf-demo/public"
           }

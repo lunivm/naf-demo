@@ -3,12 +3,14 @@
 
 :host {
   font-size: 17px;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding: 16px;
 }
 
 a {
   display: inline-block;
-  padding: 15px;
+  padding-left: 16px;
   text-decoration: none;
   color: initial;
 
