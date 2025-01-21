@@ -1,5 +1,18 @@
+@use "sass:map";
+@use "../../../shared/styles/colors" as colors;
+
 :host {
   font-size: 17px;
-  padding: 15px;
   display: block;
+}
+
+a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: initial;
+
+  &.active {
+    color: map.get(colors.$colors, "primary");
+  }
 }
