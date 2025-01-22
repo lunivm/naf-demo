@@ -3,8 +3,29 @@
 </naf-toolbar>
 
 <div class="charts-container">
-  <p-card header="Simple Card"/>
-  <p-card header="Simple Card"/>
+  <naf-chart-card title="Booking"></naf-chart-card>
+  <naf-chart-card title="Categories"></naf-chart-card>
 </div>
 
-<p-card header="Simple Card"/>
+<p-card class="tabs-card">
+  <div class="card">
+    <p-tabs value="0">
+      <p-tablist>
+        <p-tab value="0">Header I</p-tab>
+        <p-tab value="1">Header II</p-tab>
+      </p-tablist>
+      <p-tabpanels>
+        <p-tabpanel value="0">
+          <p>
+            Table 1
+          </p>
+        </p-tabpanel>
+        <p-tabpanel value="1">
+          <p>
+            Table 2
+          </p>
+        </p-tabpanel>
+      </p-tabpanels>
+    </p-tabs>
+  </div>
+</p-card>

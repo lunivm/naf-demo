@@ -1,9 +1,13 @@
+.tabs-card {
+  --p-card-body-padding: 0;
+}
+
 .charts-container {
   display: flex;
   column-gap: var(--naf-indent-xlarge);
   margin-bottom: var(--naf-indent-xxxlarge);
 
-  p-card {
+  naf-chart-card {
     flex: 1;
   }
 }
