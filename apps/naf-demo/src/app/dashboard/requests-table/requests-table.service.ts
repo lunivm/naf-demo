@@ -32,7 +32,7 @@ const mock: RequestResponse[] = [
   providedIn: 'root'
 })
 export class RequestsTableService {
-  async getRequests(): Promise<RequestResponse[]> {
+  async getData(): Promise<RequestResponse[]> {
     return mock;
   }
 }

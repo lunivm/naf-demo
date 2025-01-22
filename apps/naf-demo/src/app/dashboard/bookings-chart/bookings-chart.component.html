@@ -1,6 +1,6 @@
 <apx-chart
   [chart]="chartOptions"
-  [series]="[{
-    data: [23, 34, 12, 54, 32 , 43]
-  }]"
+  [dataLabels]="{enabled: false}"
+  [yaxis]="{min: 0}"
+  [series]="series()"
 ></apx-chart>
