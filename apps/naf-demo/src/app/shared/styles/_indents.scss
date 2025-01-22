@@ -1,9 +1,10 @@
 @use "sass:map";
 
-$indents: (
-  small: 8px,
-  medium: 16px,
-  large: 24px,
-  xlarge: 32px,
-  xxlarge: 40px,
-);
+:root {
+  --naf-indent-small: 8px;
+  --naf-indent-medium:16px;
+  --naf-indent-large: 24px;
+  --naf-indent-xlarge: 32px;
+  --naf-indent-xxlarge: 40px;
+  --naf-indent-xxxlarge: 48px;
+}

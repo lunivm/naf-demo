@@ -1,17 +1,16 @@
 @use "sass:map";
 @use "../../../shared/styles/colors";
-@use "../../../shared/styles/indents";
 
 :host {
   font-size: 17px;
   display: flex;
   align-items: center;
-  padding: map.get(indents.$indents, "medium");
+  padding: var(--naf-indent-medium);
 }
 
 a {
   display: inline-block;
-  padding-left: map.get(indents.$indents, "medium");
+  padding-left: var(--naf-indent-medium);
   text-decoration: none;
   color: initial;
 

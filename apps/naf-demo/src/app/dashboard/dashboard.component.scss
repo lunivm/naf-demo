@@ -1,0 +1,9 @@
+.charts-container {
+  display: flex;
+  column-gap: var(--naf-indent-xlarge);
+  margin-bottom: var(--naf-indent-xxxlarge);
+
+  p-card {
+    flex: 1;
+  }
+}

@@ -1,9 +1,6 @@
-@use "sass:map";
-@use "../../shared/styles/indents";
-
 :host {
   display: block;
   flex: 1;
-  padding: map.get(indents.$indents, "large") map.get(indents.$indents, "xlarge") map.get(indents.$indents, "xxlarge");
+  padding: var(--naf-indent-large) var(--naf-indent-xlarge) var(--naf-indent-xxlarge);
   background-color: grey;
 }

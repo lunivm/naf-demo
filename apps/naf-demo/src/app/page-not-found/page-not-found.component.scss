@@ -1,7 +1,12 @@
-.not-found {
+:host {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
-  animation: none;
 }
+
+.not-found {
+  display: flex;
+  align-items: center;
+}
+
