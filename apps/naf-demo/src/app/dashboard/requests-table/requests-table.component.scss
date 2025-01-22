@@ -1,0 +1,13 @@
+:host {
+  --p-datatable-column-title-font-weight: 400;
+  --p-datatable-body-cell-border-color: transparent;
+  --p-datatable-header-cell-border-color: transparent;
+}
+
+.tabs-card {
+  --p-card-body-padding: 0;
+}
+
+p-tablist {
+  margin-bottom: 20px; // special case: margin 20px + padding of the header cell 12px under = 32px
+}

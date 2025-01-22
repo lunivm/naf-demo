@@ -1,20 +1,32 @@
-<!--<p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">-->
-<p-table [value]="requests()">
-  <ng-template #header>
-    <tr>
-      <th>Date</th>
-      <th>Name</th>
-      <th>Amount</th>
-      <th>Status</th>
-    </tr>
-  </ng-template>
+<p-card class="tabs-card">
+  <div class="card">
+    <p-tabs value="recent">
+      <p-tablist>
+        <p-tab value="recent">Recent</p-tab>
+        <p-tab value="active">Active</p-tab>
+      </p-tablist>
 
-  <ng-template #body let-product>
-    <tr>
-      <td>{{ product.date }}</td>
-      <td>{{ product.name }}</td>
-      <td>{{ product.amount }}</td>
-      <td>{{ product.status }}</td>
-    </tr>
-  </ng-template>
-</p-table>
+      <p-table [value]="requests()">
+        <ng-template #header>
+          <tr [style]="{fontSize: '12px'}">
+            <th [style]="{width: '160px'}">Date</th>
+            <th>Name</th>
+            <th [style]="{width: '130px'}">Amount</th>
+            <th [style]="{width: '100px'}">Status</th>
+          </tr>
+        </ng-template>
+
+        <ng-template #body let-product>
+          <tr>
+            <td>{{ product.date }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.amount | currency:'EUR':'symbol':'1.0-0' }}</td>
+            <td style="text-transform: capitalize">{{ product.status }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-tabs>
+  </div>
+</p-card>
+
+
