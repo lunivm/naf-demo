@@ -6,6 +6,7 @@ import { Card } from 'primeng/card';
 import { TabsModule } from 'primeng/tabs';
 import { BookingsChartComponent } from './bookings-chart/bookings-chart.component';
 import { CategoriesChartComponent } from './categories-chart/categories-chart.component';
+import { RequestsTableComponent } from './requests-table/requests-table.component';
 
 @Component({
   selector: 'naf-dashboard',
@@ -17,6 +18,7 @@ import { CategoriesChartComponent } from './categories-chart/categories-chart.co
     TabsModule,
     BookingsChartComponent,
     CategoriesChartComponent,
+    RequestsTableComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',

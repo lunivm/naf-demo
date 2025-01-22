@@ -8,10 +8,12 @@
   margin-bottom: var(--naf-indent-xxxlarge);
 
   p-card {
-    flex: 1;
+    display: block;
+    flex: 1 1 50%;
   }
 }
 
 naf-categories-chart {
-  //padding-bottom: 130px;
+  //padding: 0 130px;
+  //width: calc(100% - 30px)
 }

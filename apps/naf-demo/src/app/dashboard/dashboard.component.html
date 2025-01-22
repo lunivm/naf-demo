@@ -1,5 +1,5 @@
 <naf-toolbar title="Dashboard">
-  <p-button size="small" label="Submit"/>
+  <p-button size="small" [label]="'Submit Request' | uppercase" />
 </naf-toolbar>
 
 <div class="charts-container">
@@ -13,23 +13,13 @@
 
 <p-card class="tabs-card">
   <div class="card">
-    <p-tabs value="0">
+    <p-tabs value="recent">
       <p-tablist>
-        <p-tab value="0">Header I</p-tab>
-        <p-tab value="1">Header II</p-tab>
+        <p-tab value="recent">Recent</p-tab>
+        <p-tab value="active">Active</p-tab>
       </p-tablist>
-      <p-tabpanels>
-        <p-tabpanel value="0">
-          <p>
-            Table 1
-          </p>
-        </p-tabpanel>
-        <p-tabpanel value="1">
-          <p>
-            Table 2
-          </p>
-        </p-tabpanel>
-      </p-tabpanels>
+
+      <naf-requests-table></naf-requests-table>
     </p-tabs>
   </div>
 </p-card>
