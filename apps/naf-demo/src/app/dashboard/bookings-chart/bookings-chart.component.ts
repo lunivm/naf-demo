@@ -6,7 +6,7 @@ import { BookingsChartService } from './bookings-chart.service';
   selector: 'naf-bookings-chart',
   imports: [ChartComponent],
   templateUrl: './bookings-chart.component.html',
-  styles: ':host {display: block}'
+  styleUrl: './bookings-chart.component.scss',
 })
 export class BookingsChartComponent implements OnInit {
   readonly chartOptions: ApexChart = {

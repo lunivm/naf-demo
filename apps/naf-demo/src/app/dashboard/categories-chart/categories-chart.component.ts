@@ -7,7 +7,7 @@ import { CategoriesChartService } from './categories-chart.service';
   selector: 'naf-categories-chart',
   imports: [CommonModule, ChartComponent],
   templateUrl: './categories-chart.component.html',
-  styles: ':host {display: block}'
+  styleUrl: './categories-chart.component.scss'
 })
 export class CategoriesChartComponent implements OnInit {
   readonly chartOptions: ApexChart = {
