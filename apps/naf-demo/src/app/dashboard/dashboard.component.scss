@@ -7,7 +7,11 @@
   column-gap: var(--naf-indent-xlarge);
   margin-bottom: var(--naf-indent-xxxlarge);
 
-  naf-chart-card {
+  p-card {
     flex: 1;
   }
+}
+
+naf-categories-chart {
+  //padding-bottom: 130px;
 }

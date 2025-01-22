@@ -1,10 +1,14 @@
 <naf-toolbar title="Dashboard">
-  <p-button size="small" label="Submit" severity="info"/>
+  <p-button size="small" label="Submit"/>
 </naf-toolbar>
 
 <div class="charts-container">
-  <naf-chart-card title="Booking"></naf-chart-card>
-  <naf-chart-card title="Categories"></naf-chart-card>
+  <p-card header="Bookings">
+    <naf-bookings-chart></naf-bookings-chart>
+  </p-card>
+  <p-card header="Categories">
+    <naf-categories-chart></naf-categories-chart>
+  </p-card>
 </div>
 
 <p-card class="tabs-card">

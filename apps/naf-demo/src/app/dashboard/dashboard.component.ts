@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from '../shared/components/toolbar/toolbar.component';
 import { Button } from 'primeng/button';
 import { Card } from 'primeng/card';
-import { ChartCardComponent } from '../shared/components/chart-card/chart-card.component';
 import { TabsModule } from 'primeng/tabs';
+import { BookingsChartComponent } from './bookings-chart/bookings-chart.component';
+import { CategoriesChartComponent } from './categories-chart/categories-chart.component';
 
 @Component({
   selector: 'naf-dashboard',
@@ -13,8 +14,9 @@ import { TabsModule } from 'primeng/tabs';
     ToolbarComponent,
     Button,
     Card,
-    ChartCardComponent,
     TabsModule,
+    BookingsChartComponent,
+    CategoriesChartComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
