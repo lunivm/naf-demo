@@ -1,8 +1,8 @@
 :host {
   display: block;
   flex: 1;
+  overflow-y: scroll;
   padding: var(--naf-indent-large) var(--naf-indent-xlarge) var(--naf-indent-xxlarge);
-
   background-color: var(--p-surface-100);
 
   .naf-dark-mode & {

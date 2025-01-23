@@ -2,8 +2,8 @@
   <div class="card">
     <p-tabs value="recent">
       <p-tablist>
-        <p-tab value="recent">Recent</p-tab>
-        <p-tab value="active">Active</p-tab>
+        <p-tab value="recent" (click)="onTabClick('recent')">Recent</p-tab>
+        <p-tab value="active" (click)="onTabClick('active')">Active</p-tab>
       </p-tablist>
 
       <p-table [value]="requests()">

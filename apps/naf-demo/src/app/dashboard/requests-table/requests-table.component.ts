@@ -1,9 +1,13 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
-import { RequestResponse, RequestsTableService } from './requests-table.service';
+import {
+  RequestFilterParams,
+  RequestResponse,
+  RequestsTableService,
+} from './requests-table.service';
 import { Card } from 'primeng/card';
-import { Tab, Tabs, TabsModule } from 'primeng/tabs';
+import { TabsModule } from 'primeng/tabs';
 
 @Component({
   selector: 'naf-requests-table',
@@ -18,5 +22,17 @@ export class RequestsTableComponent implements OnInit {
 
   async ngOnInit() {
     this.requests.set(await this.requestsTableService.getData());
+  }
+
+  async onTabClick(tab: 'recent' | 'active') {
+    const filter =
+      tab === 'active'
+        ? ({
+            status: 'active',
+          } as RequestFilterParams)
+        : undefined;
+
+    const requests = await this.requestsTableService.getData(filter);
+    this.requests.set(requests);
   }
 }
