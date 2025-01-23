@@ -1,8 +1,24 @@
 :host {
+  --p-toolbar-padding: 0;
+  --p-toolbar-background: transparent;
+
   display: block;
   margin-bottom: var(--naf-indent-xlarge);
 }
 
 p-toolbar {
   background-color: transparent;
+}
+
+.naf-toolbar-header {
+  font-size: 23px;
+}
+
+.naf-clickable-icon {
+  margin-left: var(--naf-indent-xlarge);
+  cursor: pointer;
+
+  &:first-of-type {
+    margin-left: var(--naf-indent-xxlarge);
+  }
 }

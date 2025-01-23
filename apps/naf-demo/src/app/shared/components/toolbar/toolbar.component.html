@@ -1,11 +1,11 @@
 <p-toolbar [style]="{border: 'none'}">
   <ng-template #start>
-    <h4>{{title()}}</h4>
+    <span class="naf-toolbar-header">{{title()}}</span>
   </ng-template>
 
   <ng-template #end>
     <ng-content></ng-content>
-    <p-button class="" variant="text" size="small"><mat-icon svgIcon="bell"></mat-icon></p-button>
-    <p-button variant="text" size="small"><mat-icon svgIcon="logout"></mat-icon></p-button>
+    <mat-icon class="naf-clickable-icon" svgIcon="bell"></mat-icon>
+    <mat-icon class="naf-clickable-icon" svgIcon="logout"></mat-icon>
   </ng-template>
 </p-toolbar>
