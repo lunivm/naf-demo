@@ -1,0 +1,15 @@
+:host {
+  --p-dialog-header-padding: var(--naf-indent-medium) var(--naf-indent-large);
+}
+
+input, p-select {
+  width: 415px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: var(--naf-indent-large);
+}

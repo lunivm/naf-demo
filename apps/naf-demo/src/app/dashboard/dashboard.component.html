@@ -1,5 +1,5 @@
 <naf-toolbar title="Dashboard">
-  <p-button size="small" [label]="'Submit Request' | uppercase" />
+  <p-button size="small" [label]="'Submit Request' | uppercase" (click)="showSubmitRequestDialog()"/>
 </naf-toolbar>
 
 <div class="charts-container">
@@ -12,3 +12,5 @@
 </div>
 
 <naf-requests-table></naf-requests-table>
+
+<naf-submit-request-modal [(visible)]="submitRequestDialogVisible"></naf-submit-request-modal>

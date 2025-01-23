@@ -1,0 +1,18 @@
+<p-dialog header="Submit Request" [modal]="true" [(visible)]="visible" [style]="{ width: '50rem' }">
+  <div class="row">
+    <p-floatlabel variant="in">
+      <input pInputText id="name" autocomplete="off" />
+      <label for="name">Name</label>
+    </p-floatlabel>
+  </div>
+
+  <div class="row">
+    <p-select [options]="[{name: 'Category 1', cope: 'category_1'}, {name: 'Category 2', cope: 'category_2'}]" optionLabel="name" size="large" placeholder="Category"/>
+  </div>
+
+  <div class="row">
+    <textarea rows="5" pTextarea></textarea>
+  </div>
+
+  <p-button size="small" [label]="'Submit Request' | uppercase" (click)="visible.set(false)"/>
+</p-dialog>
