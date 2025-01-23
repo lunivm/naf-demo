@@ -5,6 +5,7 @@
 
   <ng-template #end>
     <ng-content></ng-content>
+    <mat-icon class="clickable-icon" [svgIcon]="themeIcon()" (click)="toggleTheme()"></mat-icon>
     <mat-icon class="clickable-icon" svgIcon="bell"></mat-icon>
     <mat-icon class="clickable-icon" svgIcon="logout"></mat-icon>
   </ng-template>

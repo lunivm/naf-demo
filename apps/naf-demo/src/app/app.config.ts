@@ -5,6 +5,7 @@ import { providePrimeNG } from 'primeng/config';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import Material from '@primeng/themes/material';
 import { provideHttpClient } from '@angular/common/http';
+import { DARK_MODE_CLASS } from './shared/constants/styling';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,6 +16,9 @@ export const appConfig: ApplicationConfig = {
     providePrimeNG({
       theme: {
         preset: Material,
+        options: {
+          darkModeSelector: `.${DARK_MODE_CLASS}`
+        }
       },
     }),
   ],

@@ -2,9 +2,4 @@
   display: block;
   flex: 1;
   padding: var(--naf-indent-large) var(--naf-indent-xlarge) var(--naf-indent-xxlarge);
-  background-color: #FAFAFA;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #262427;
-  }
 }
