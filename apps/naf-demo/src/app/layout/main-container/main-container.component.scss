@@ -2,4 +2,10 @@
   display: block;
   flex: 1;
   padding: var(--naf-indent-large) var(--naf-indent-xlarge) var(--naf-indent-xxlarge);
+
+  background-color: var(--p-surface-100);
+
+  .naf-dark-mode & {
+    background-color: var(--p-surface-700);
+  }
 }

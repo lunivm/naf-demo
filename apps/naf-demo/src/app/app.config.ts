@@ -3,9 +3,9 @@ import { provideRouter } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { providePrimeNG } from 'primeng/config';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import Material from '@primeng/themes/material';
 import { provideHttpClient } from '@angular/common/http';
 import { DARK_MODE_CLASS } from './shared/constants/styling';
+import { MyPreset } from './shared/constants/theme';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,7 +15,7 @@ export const appConfig: ApplicationConfig = {
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
-        preset: Material,
+        preset: MyPreset,
         options: {
           darkModeSelector: `.${DARK_MODE_CLASS}`
         }
