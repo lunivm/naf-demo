@@ -27,7 +27,7 @@
           }
         ],
         "styles": ["apps/naf-demo/src/styles.scss"],
-        "scripts": ["node_modules/apexcharts/dist/apexcharts.esm.js"]
+        "scripts": ["node_modules/apexcharts/dist/apexcharts.js"]
       },
       "configurations": {
         "production": {
