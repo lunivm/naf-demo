@@ -1,6 +1,6 @@
 [build]
   publish = "dist/apps/naf-demo/browser"
-  command = "ng build --configuration production"
+  command = "npx nx run naf-demo:build"
 
 [[redirects]]
   from = "/*"
