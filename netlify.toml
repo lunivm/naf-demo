@@ -1,6 +1,6 @@
 [build]
   publish = "dist/apps/naf-demo/browser"
-  command = "npx nx run naf-demo:build"
+  command = "npx nx build naf-demo --configuration=production"
 
 [[redirects]]
   from = "/*"
